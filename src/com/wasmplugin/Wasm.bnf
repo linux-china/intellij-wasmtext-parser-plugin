@@ -133,7 +133,7 @@ export_desc::= tLP (tFUNC|tMEMORY|tTABLE|tGLOBAL) idx tRP
 //
 start::= tLP tSTART idx tRP
 //
-element::=  tLP tELEM idx? offset_abbrv idx*  tRP
+element::=  tLP tELEM idx? offset_abbrv tFUNC* idx*  tRP
 
 offset_abbrv::=tLP tOFFSET? instruction tRP
 //
