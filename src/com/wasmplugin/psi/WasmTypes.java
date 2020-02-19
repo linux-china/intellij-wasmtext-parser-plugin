@@ -90,12 +90,14 @@ public interface WasmTypes {
   IElementType TFLOAT = new WasmTokenType("tFLOAT");
   IElementType TFLOOR = new WasmTokenType("tFLOOR");
   IElementType TFUNC = new WasmTokenType("tFUNC");
+  IElementType TFUNCREF = new WasmTokenType("tFUNCREF");
   IElementType TGE = new WasmTokenType("tGE");
+  IElementType TGET = new WasmTokenType("TGET");
   IElementType TGET_GLOBAL = new WasmTokenType("tGET_GLOBAL");
   IElementType TGET_LOCAL = new WasmTokenType("tGET_LOCAL");
   IElementType TGE_S = new WasmTokenType("tGE_S");
   IElementType TGE_U = new WasmTokenType("tGE_U");
-  IElementType TGLOBAL = new WasmTokenType("tGLOBAL");
+  IElementType TGLOBAL = new WasmTokenType("TGLOBAL");
   IElementType TGROW = new WasmTokenType("tGROW");
   IElementType TGT = new WasmTokenType("tGT");
   IElementType TGT_S = new WasmTokenType("tGT_S");
@@ -116,7 +118,7 @@ public interface WasmTypes {
   IElementType TLOAD32_U = new WasmTokenType("tLOAD32_U");
   IElementType TLOAD8_S = new WasmTokenType("tLOAD8_S");
   IElementType TLOAD8_U = new WasmTokenType("tLOAD8_U");
-  IElementType TLOCAL = new WasmTokenType("tLOCAL");
+  IElementType TLOCAL = new WasmTokenType("TLOCAL");
   IElementType TLOOP = new WasmTokenType("tLOOP");
   IElementType TLP = new WasmTokenType("tLP");
   IElementType TLT = new WasmTokenType("tLT");
@@ -150,6 +152,7 @@ public interface WasmTypes {
   IElementType TROTR = new WasmTokenType("tROTR");
   IElementType TRP = new WasmTokenType("tRP");
   IElementType TSELECT = new WasmTokenType("tSELECT");
+  IElementType TSET = new WasmTokenType("TSET");
   IElementType TSET_GLOBAL = new WasmTokenType("tSET_GLOBAL");
   IElementType TSET_LOCAL = new WasmTokenType("tSET_LOCAL");
   IElementType TSHL = new WasmTokenType("tSHL");
@@ -164,7 +167,8 @@ public interface WasmTypes {
   IElementType TSTORE8 = new WasmTokenType("tSTORE8");
   IElementType TSUB = new WasmTokenType("tSUB");
   IElementType TTABLE = new WasmTokenType("tTABLE");
-  IElementType TTEE_GLOBAL = new WasmTokenType("tTEE_GLOBAL");
+  IElementType TTEE = new WasmTokenType("TTEE");
+  IElementType TTEE_LOCAL = new WasmTokenType("tTEE_LOCAL");
   IElementType TTHEN = new WasmTokenType("tTHEN");
   IElementType TTRUNC = new WasmTokenType("tTRUNC");
   IElementType TTRUNC_S_F32 = new WasmTokenType("tTRUNC_S_F32");
