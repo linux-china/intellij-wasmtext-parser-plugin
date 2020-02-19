@@ -71,33 +71,33 @@ class WasmLexer implements FlexLexer {
     "\1\4\1\5\1\6\14\1\1\7\1\1\1\0\1\10"+
     "\10\0\1\11\5\0\1\12\5\0\1\13\10\0\1\14"+
     "\10\0\1\15\5\0\1\16\1\0\1\17\3\0\1\7"+
-    "\20\0\1\20\1\21\1\0\1\22\2\0\2\10\7\0"+
-    "\1\2\1\23\1\10\1\0\1\24\1\25\1\10\1\26"+
-    "\1\0\1\27\2\0\1\30\1\31\1\32\1\0\1\33"+
-    "\1\0\1\34\1\35\2\0\1\36\1\37\1\0\1\40"+
-    "\1\41\2\0\1\42\13\0\1\43\2\0\1\44\1\45"+
-    "\3\0\1\46\13\0\1\47\2\0\1\50\16\0\1\51"+
-    "\1\52\1\10\3\0\1\53\3\0\1\54\4\0\1\55"+
-    "\1\0\1\56\1\0\1\57\1\60\1\61\1\62\1\0"+
-    "\1\63\1\64\2\0\1\65\1\66\1\67\3\0\1\70"+
-    "\11\0\1\71\3\0\1\72\3\0\1\73\1\74\1\0"+
-    "\1\75\1\76\1\0\1\77\1\0\1\100\1\0\1\101"+
-    "\1\10\3\0\1\102\1\0\1\103\3\0\1\104\1\105"+
-    "\5\0\1\106\3\0\1\107\2\0\1\110\4\0\1\111"+
-    "\1\112\1\0\1\113\1\114\3\0\1\115\1\116\1\117"+
-    "\1\0\1\120\7\0\1\121\3\0\1\122\1\123\1\124"+
-    "\6\0\1\125\3\0\1\126\1\0\1\127\1\0\1\130"+
-    "\1\0\1\131\3\0\1\132\1\0\1\133\6\0\1\10"+
-    "\1\134\1\135\3\0\1\136\1\137\7\0\1\140\1\141"+
-    "\13\0\1\142\1\143\1\144\1\145\4\0\1\146\4\0"+
-    "\1\147\2\0\1\150\1\151\13\0\1\152\1\0\1\153"+
-    "\5\0\1\154\10\0\1\155\1\156\1\157\1\160\1\161"+
-    "\1\162\1\163\5\0\1\164\1\0\1\165\1\166\6\0"+
-    "\1\167\1\170\1\171\1\172\1\173\6\0\1\174\1\175"+
-    "\1\176\1\177";
+    "\20\0\1\20\1\21\1\0\1\22\2\0\2\10\2\0"+
+    "\1\23\4\0\1\2\1\24\1\10\1\0\1\25\1\26"+
+    "\1\10\1\27\1\0\1\30\2\0\1\31\1\32\1\33"+
+    "\1\0\1\34\1\0\1\35\1\36\2\0\1\37\1\40"+
+    "\1\0\1\41\1\42\2\0\1\43\13\0\1\44\2\0"+
+    "\1\45\1\46\3\0\1\47\13\0\1\50\1\51\1\0"+
+    "\1\52\7\0\1\53\6\0\1\54\1\55\1\10\3\0"+
+    "\1\56\3\0\1\57\4\0\1\60\1\0\1\61\1\0"+
+    "\1\62\1\63\1\64\1\65\1\0\1\66\1\67\2\0"+
+    "\1\70\1\71\1\72\3\0\1\73\11\0\1\74\3\0"+
+    "\1\75\3\0\1\76\1\77\1\0\1\100\1\101\1\0"+
+    "\1\102\1\0\1\103\1\0\1\104\1\10\4\0\1\105"+
+    "\1\0\1\106\3\0\1\107\1\110\5\0\1\111\3\0"+
+    "\1\112\2\0\1\113\4\0\1\114\1\115\1\0\1\116"+
+    "\1\117\3\0\1\120\1\121\1\122\1\0\1\123\7\0"+
+    "\1\124\4\0\1\125\1\126\1\127\6\0\1\130\3\0"+
+    "\1\131\1\0\1\132\1\0\1\133\1\0\1\134\3\0"+
+    "\1\135\1\0\1\136\6\0\1\10\1\137\1\140\1\141"+
+    "\3\0\1\142\1\143\7\0\1\144\1\145\13\0\1\146"+
+    "\1\147\1\150\1\151\4\0\1\152\4\0\1\153\2\0"+
+    "\1\154\1\155\13\0\1\156\1\0\1\157\5\0\1\160"+
+    "\10\0\1\161\1\162\1\163\1\164\1\165\1\166\1\167"+
+    "\5\0\1\170\1\0\1\171\1\172\6\0\1\173\1\174"+
+    "\1\175\1\176\1\177\6\0\1\200\1\201\1\202\1\203";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[455];
+    int [] result = new int[458];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -147,41 +147,42 @@ class WasmLexer implements FlexLexer {
     "\0\u1fcc\0\u2003\0\156\0\u203a\0\u2071\0\156\0\u20a8\0\u20df"+
     "\0\u2116\0\u214d\0\u2184\0\u21bb\0\u21f2\0\u2229\0\u2260\0\u2297"+
     "\0\u22ce\0\u2305\0\u233c\0\u2373\0\156\0\156\0\u23aa\0\u23e1"+
-    "\0\u2418\0\u244f\0\156\0\u2486\0\u24bd\0\u24f4\0\156\0\u252b"+
-    "\0\u2562\0\u2599\0\u25d0\0\156\0\u2607\0\156\0\u263e\0\156"+
-    "\0\156\0\u2675\0\156\0\u26ac\0\156\0\156\0\u26e3\0\u271a"+
-    "\0\156\0\156\0\u2751\0\u2788\0\u27bf\0\u27f6\0\156\0\u282d"+
-    "\0\u2864\0\u289b\0\u28d2\0\u2909\0\u2940\0\u2977\0\u29ae\0\u29e5"+
-    "\0\156\0\u2a1c\0\u2a53\0\u2a8a\0\156\0\u2ac1\0\u2af8\0\u2b2f"+
-    "\0\156\0\156\0\u2b66\0\156\0\156\0\u2b9d\0\156\0\u2bd4"+
-    "\0\156\0\u2c0b\0\u2c42\0\u2c79\0\u2cb0\0\u2ce7\0\u2d1e\0\156"+
-    "\0\u2d55\0\156\0\u2d8c\0\u2dc3\0\u2dfa\0\156\0\156\0\u2e31"+
-    "\0\u2e68\0\u2e9f\0\u2ed6\0\u2f0d\0\156\0\u2f44\0\u2f7b\0\u2fb2"+
-    "\0\156\0\u2fe9\0\u3020\0\156\0\u3057\0\u308e\0\u30c5\0\u30fc"+
-    "\0\156\0\156\0\u3133\0\156\0\u316a\0\u31a1\0\u31d8\0\u320f"+
-    "\0\156\0\156\0\156\0\u3246\0\156\0\u327d\0\u32b4\0\u32eb"+
-    "\0\u3322\0\u3359\0\u3390\0\u33c7\0\156\0\u33fe\0\u3435\0\u346c"+
-    "\0\156\0\156\0\156\0\u34a3\0\u34da\0\u3511\0\u3548\0\u357f"+
-    "\0\u35b6\0\156\0\u35ed\0\u3624\0\u365b\0\156\0\u3692\0\156"+
-    "\0\u36c9\0\156\0\u3700\0\156\0\u3737\0\u376e\0\u37a5\0\156"+
-    "\0\u37dc\0\156\0\u3813\0\u384a\0\u3881\0\u38b8\0\u38ef\0\u3926"+
-    "\0\u395d\0\156\0\156\0\u3994\0\u39cb\0\u3a02\0\156\0\156"+
-    "\0\u3a39\0\u3a70\0\u3aa7\0\u3ade\0\u3b15\0\u3b4c\0\u3b83\0\156"+
-    "\0\156\0\u3bba\0\u3bf1\0\u3c28\0\u3c5f\0\u3c96\0\u3ccd\0\u3d04"+
-    "\0\u3d3b\0\u3d72\0\u3da9\0\u3de0\0\156\0\156\0\156\0\156"+
-    "\0\u3e17\0\u3e4e\0\u3e85\0\u3ebc\0\156\0\u3ef3\0\u3f2a\0\u3f61"+
-    "\0\u3f98\0\156\0\u3fcf\0\u4006\0\156\0\156\0\u403d\0\u4074"+
-    "\0\u40ab\0\u40e2\0\u4119\0\u4150\0\u4187\0\u41be\0\u41f5\0\u422c"+
-    "\0\u4263\0\156\0\u429a\0\156\0\u42d1\0\u4308\0\u433f\0\u4376"+
-    "\0\u43ad\0\156\0\u43e4\0\u441b\0\u4452\0\u4489\0\u44c0\0\u44f7"+
-    "\0\u452e\0\u4565\0\156\0\156\0\156\0\156\0\156\0\156"+
-    "\0\156\0\u459c\0\u45d3\0\u460a\0\u4641\0\u4678\0\156\0\u46af"+
-    "\0\156\0\156\0\u46e6\0\u471d\0\u4754\0\u478b\0\u47c2\0\u47f9"+
-    "\0\156\0\156\0\156\0\156\0\156\0\u4830\0\u4867\0\u489e"+
-    "\0\u48d5\0\u490c\0\u4943\0\156\0\156\0\156\0\156";
+    "\0\u2418\0\u244f\0\u2486\0\u24bd\0\u24f4\0\u252b\0\156\0\u2562"+
+    "\0\u2599\0\u25d0\0\u2607\0\156\0\u263e\0\156\0\u2675\0\156"+
+    "\0\156\0\u26ac\0\156\0\u26e3\0\156\0\156\0\u271a\0\u2751"+
+    "\0\156\0\156\0\u2788\0\u27bf\0\u27f6\0\u282d\0\156\0\u2864"+
+    "\0\u289b\0\u28d2\0\u2909\0\u2940\0\u2977\0\u29ae\0\u29e5\0\u2a1c"+
+    "\0\156\0\u2a53\0\u2a8a\0\u2ac1\0\156\0\u2af8\0\u2b2f\0\u2b66"+
+    "\0\156\0\156\0\u2b9d\0\156\0\156\0\u2bd4\0\156\0\u2c0b"+
+    "\0\156\0\u2c42\0\u2c79\0\u2cb0\0\u2ce7\0\u2d1e\0\u2d55\0\u2d8c"+
+    "\0\156\0\u2dc3\0\156\0\u2dfa\0\u2e31\0\u2e68\0\156\0\156"+
+    "\0\u2e9f\0\u2ed6\0\u2f0d\0\u2f44\0\u2f7b\0\156\0\u2fb2\0\u2fe9"+
+    "\0\u3020\0\156\0\u3057\0\u308e\0\156\0\u30c5\0\u30fc\0\u3133"+
+    "\0\u316a\0\156\0\156\0\u31a1\0\156\0\u31d8\0\u320f\0\u3246"+
+    "\0\u327d\0\156\0\156\0\156\0\u32b4\0\156\0\u32eb\0\u3322"+
+    "\0\u3359\0\u3390\0\u33c7\0\u33fe\0\u3435\0\156\0\u346c\0\u34a3"+
+    "\0\u34da\0\u3511\0\156\0\156\0\156\0\u3548\0\u357f\0\u35b6"+
+    "\0\u35ed\0\u3624\0\u365b\0\156\0\u3692\0\u36c9\0\u3700\0\156"+
+    "\0\u3737\0\156\0\u376e\0\156\0\u37a5\0\156\0\u37dc\0\u3813"+
+    "\0\u384a\0\156\0\u3881\0\156\0\u38b8\0\u38ef\0\u3926\0\u395d"+
+    "\0\u3994\0\u39cb\0\u3a02\0\156\0\156\0\156\0\u3a39\0\u3a70"+
+    "\0\u3aa7\0\156\0\156\0\u3ade\0\u3b15\0\u3b4c\0\u3b83\0\u3bba"+
+    "\0\u3bf1\0\u3c28\0\156\0\156\0\u3c5f\0\u3c96\0\u3ccd\0\u3d04"+
+    "\0\u3d3b\0\u3d72\0\u3da9\0\u3de0\0\u3e17\0\u3e4e\0\u3e85\0\156"+
+    "\0\156\0\156\0\156\0\u3ebc\0\u3ef3\0\u3f2a\0\u3f61\0\156"+
+    "\0\u3f98\0\u3fcf\0\u4006\0\u403d\0\156\0\u4074\0\u40ab\0\156"+
+    "\0\156\0\u40e2\0\u4119\0\u4150\0\u4187\0\u41be\0\u41f5\0\u422c"+
+    "\0\u4263\0\u429a\0\u42d1\0\u4308\0\156\0\u433f\0\156\0\u4376"+
+    "\0\u43ad\0\u43e4\0\u441b\0\u4452\0\156\0\u4489\0\u44c0\0\u44f7"+
+    "\0\u452e\0\u4565\0\u459c\0\u45d3\0\u460a\0\156\0\156\0\156"+
+    "\0\156\0\156\0\156\0\156\0\u4641\0\u4678\0\u46af\0\u46e6"+
+    "\0\u471d\0\156\0\u4754\0\156\0\156\0\u478b\0\u47c2\0\u47f9"+
+    "\0\u4830\0\u4867\0\u489e\0\156\0\156\0\156\0\156\0\156"+
+    "\0\u48d5\0\u490c\0\u4943\0\u497a\0\u49b1\0\u49e8\0\156\0\156"+
+    "\0\156\0\156";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[455];
+    int [] result = new int[458];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -293,66 +294,67 @@ class WasmLexer implements FlexLexer {
     "\2\0\1\44\2\0\2\u0104\1\0\1\u0104\11\0\1\u0104"+
     "\2\0\2\u0104\1\44\3\0\1\u0104\1\0\4\u0104\3\0"+
     "\2\u0104\51\0\1\u0105\35\0\1\u0106\114\0\1\u0107\71\0"+
-    "\1\u0108\61\0\1\u0109\47\0\1\u010a\106\0\1\u010b\72\0"+
-    "\1\u010c\63\0\1\u010d\64\0\1\u010e\5\0\1\u010f\30\0"+
-    "\1\u0110\101\0\1\u0111\115\0\1\u0112\6\0\1\u0113\1\u0114"+
-    "\45\0\1\u0115\46\0\1\u0116\112\0\1\u0117\25\0\1\u0118"+
-    "\72\0\1\u0119\120\0\1\u011a\72\0\1\u011b\55\0\1\u011c"+
-    "\52\0\1\u011d\103\0\1\u011e\75\0\1\u011f\31\0\1\u0120"+
-    "\116\0\1\u0121\5\0\1\u0122\61\0\1\u0123\35\0\1\u0124"+
-    "\120\0\1\u0125\65\0\1\u0126\7\0\1\u0127\60\0\1\u0128"+
-    "\63\0\1\u0129\5\0\1\u012a\77\0\1\u012b\32\0\1\u012c"+
-    "\65\0\1\u012d\67\0\1\u012e\104\0\1\u012f\7\0\1\u0130"+
-    "\104\0\1\u0131\35\0\1\u0132\34\0\1\u0133\64\0\2\u0104"+
-    "\1\u0134\7\0\1\u0104\2\0\1\44\2\0\2\u0104\1\0"+
-    "\1\u0104\11\0\1\u0104\2\0\2\u0104\1\44\3\0\1\u0104"+
-    "\1\0\4\u0104\3\0\2\u0104\14\0\1\u0135\73\0\1\u0136"+
-    "\117\0\1\u0137\41\0\1\u0138\107\0\1\u0139\73\0\1\u013a"+
-    "\27\0\1\u013b\120\0\1\u013c\67\0\1\u013d\76\0\1\u013e"+
-    "\17\0\1\u013f\136\0\1\u0140\51\0\1\u0141\37\0\1\u0142"+
-    "\76\0\1\u0143\113\0\1\u0144\41\0\1\u0145\56\0\1\u0146"+
-    "\66\0\1\u0147\77\0\1\u0148\107\0\1\u0149\34\0\1\u014a"+
-    "\130\0\1\u014b\6\0\1\u014c\1\u014d\42\0\1\u014e\71\0"+
-    "\1\u014f\35\0\1\u0150\126\0\1\u0151\57\0\1\u0152\63\0"+
-    "\1\u0153\71\0\1\u0154\45\0\1\u0155\111\0\1\u0156\63\0"+
-    "\1\u0157\5\0\1\u0158\22\0\2\u0104\10\0\1\u0104\5\0"+
-    "\2\u0104\1\0\1\u0104\11\0\1\u0104\2\0\2\u0104\4\0"+
-    "\1\u0104\1\0\4\u0104\3\0\2\u0104\6\0\2\u0159\10\0"+
-    "\1\u0159\5\0\2\u0159\1\0\1\u0159\11\0\1\u0159\2\0"+
-    "\2\u0159\4\0\1\u0159\1\0\4\u0159\3\0\2\u0159\14\0"+
-    "\1\u015a\121\0\1\u015b\112\0\1\u015c\57\0\1\u015d\12\0"+
-    "\1\u015e\122\0\1\u015f\5\0\1\u0160\24\0\1\u0161\66\0"+
-    "\1\u0162\103\0\1\u0163\55\0\1\u0164\127\0\1\u0165\57\0"+
-    "\1\u0166\71\0\1\u0167\74\0\1\u0168\67\0\1\u0169\55\0"+
-    "\1\u016a\61\0\1\u016b\71\0\1\u016c\70\0\1\u016d\61\0"+
-    "\1\u016e\104\0\1\u016f\35\0\1\u0170\132\0\1\u0171\66\0"+
-    "\1\u0172\1\0\2\u0159\1\u0136\7\0\1\u0159\5\0\2\u0159"+
-    "\1\0\1\u0159\11\0\1\u0159\2\0\2\u0159\4\0\1\u0159"+
-    "\1\0\4\u0159\3\0\2\u0159\26\0\1\u0173\67\0\1\u0174"+
-    "\103\0\1\u0175\5\0\1\u0176\60\0\1\u0177\5\0\1\u0178"+
-    "\60\0\1\u0179\5\0\1\u017a\57\0\1\u017b\33\0\1\u017c"+
-    "\103\0\1\u017d\134\0\1\u017e\43\0\1\u017f\45\0\1\u0180"+
-    "\113\0\1\u0181\60\0\1\u0182\47\0\1\u0183\113\0\1\u0184"+
-    "\73\0\1\u0185\52\0\1\u0186\47\0\1\u0187\66\0\1\u0188"+
-    "\120\0\1\u0189\62\0\1\u018a\105\0\1\u018b\66\0\1\u018c"+
-    "\17\0\1\u018d\106\0\1\u018e\5\0\1\u018f\42\0\1\u0190"+
-    "\111\0\1\u0191\62\0\1\u0192\50\0\1\u0193\104\0\1\u0194"+
-    "\50\0\1\u0195\115\0\1\u0196\1\0\1\u0197\64\0\1\u0198"+
-    "\1\0\1\u0199\67\0\1\u019a\52\0\1\u019b\45\0\1\u019c"+
-    "\66\0\1\u019d\113\0\1\u019e\110\0\1\u019f\66\0\1\u01a0"+
-    "\51\0\1\u01a1\56\0\1\u01a2\65\0\1\u01a3\66\0\1\u01a4"+
-    "\100\0\1\u01a5\70\0\1\u01a6\64\0\1\u01a7\70\0\1\u01a8"+
-    "\53\0\1\u01a9\76\0\1\u01aa\66\0\1\u01ab\56\0\1\u01ac"+
-    "\44\0\1\u01ad\66\0\1\u01ae\121\0\1\u01af\23\0\1\u01b0"+
-    "\131\0\1\u01b1\66\0\1\u01b2\56\0\1\u01b3\75\0\1\u01b4"+
-    "\1\0\1\u01b5\64\0\1\u01b6\1\0\1\u01b7\101\0\1\u01b8"+
-    "\7\0\1\u01b9\131\0\1\u01ba\70\0\1\u01bb\64\0\1\u01bc"+
-    "\70\0\1\u01bd\31\0\1\u01be\1\0\1\u01bf\116\0\1\u01c0"+
-    "\1\0\1\u01c1\64\0\1\u01c2\1\0\1\u01c3\65\0\1\u01c4"+
-    "\70\0\1\u01c5\64\0\1\u01c6\70\0\1\u01c7\12\0";
+    "\1\u0108\66\0\1\u0109\61\0\1\u010a\47\0\1\u010b\106\0"+
+    "\1\u010c\72\0\1\u010d\63\0\1\u010e\64\0\1\u010f\5\0"+
+    "\1\u0110\30\0\1\u0111\101\0\1\u0112\115\0\1\u0113\6\0"+
+    "\1\u0114\1\u0115\45\0\1\u0116\46\0\1\u0117\112\0\1\u0118"+
+    "\25\0\1\u0119\72\0\1\u011a\120\0\1\u011b\72\0\1\u011c"+
+    "\55\0\1\u011d\52\0\1\u011e\103\0\1\u011f\75\0\1\u0120"+
+    "\31\0\1\u0121\116\0\1\u0122\5\0\1\u0123\61\0\1\u0124"+
+    "\35\0\1\u0125\120\0\1\u0126\65\0\1\u0127\7\0\1\u0128"+
+    "\60\0\1\u0129\63\0\1\u012a\5\0\1\u012b\77\0\1\u012c"+
+    "\32\0\1\u012d\65\0\1\u012e\67\0\1\u012f\104\0\1\u0130"+
+    "\7\0\1\u0131\104\0\1\u0132\35\0\1\u0133\34\0\1\u0134"+
+    "\64\0\2\u0104\1\u0135\7\0\1\u0104\2\0\1\44\2\0"+
+    "\2\u0104\1\0\1\u0104\11\0\1\u0104\2\0\2\u0104\1\44"+
+    "\3\0\1\u0104\1\0\4\u0104\3\0\2\u0104\14\0\1\u0136"+
+    "\73\0\1\u0137\117\0\1\u0138\62\0\1\u0139\45\0\1\u013a"+
+    "\107\0\1\u013b\73\0\1\u013c\27\0\1\u013d\120\0\1\u013e"+
+    "\67\0\1\u013f\76\0\1\u0140\17\0\1\u0141\136\0\1\u0142"+
+    "\51\0\1\u0143\37\0\1\u0144\76\0\1\u0145\113\0\1\u0146"+
+    "\41\0\1\u0147\56\0\1\u0148\66\0\1\u0149\77\0\1\u014a"+
+    "\107\0\1\u014b\34\0\1\u014c\130\0\1\u014d\6\0\1\u014e"+
+    "\1\u014f\42\0\1\u0150\71\0\1\u0151\35\0\1\u0152\126\0"+
+    "\1\u0153\57\0\1\u0154\63\0\1\u0155\71\0\1\u0156\45\0"+
+    "\1\u0157\111\0\1\u0158\63\0\1\u0159\5\0\1\u015a\22\0"+
+    "\2\u0104\10\0\1\u0104\5\0\2\u0104\1\0\1\u0104\11\0"+
+    "\1\u0104\2\0\2\u0104\4\0\1\u0104\1\0\4\u0104\3\0"+
+    "\2\u0104\6\0\2\u015b\10\0\1\u015b\5\0\2\u015b\1\0"+
+    "\1\u015b\11\0\1\u015b\2\0\2\u015b\4\0\1\u015b\1\0"+
+    "\4\u015b\3\0\2\u015b\14\0\1\u015c\100\0\1\u015d\107\0"+
+    "\1\u015e\112\0\1\u015f\57\0\1\u0160\12\0\1\u0161\122\0"+
+    "\1\u0162\5\0\1\u0163\24\0\1\u0164\66\0\1\u0165\103\0"+
+    "\1\u0166\55\0\1\u0167\127\0\1\u0168\57\0\1\u0169\71\0"+
+    "\1\u016a\74\0\1\u016b\67\0\1\u016c\55\0\1\u016d\61\0"+
+    "\1\u016e\71\0\1\u016f\70\0\1\u0170\61\0\1\u0171\104\0"+
+    "\1\u0172\35\0\1\u0173\132\0\1\u0174\66\0\1\u0175\1\0"+
+    "\2\u015b\1\u0137\7\0\1\u015b\5\0\2\u015b\1\0\1\u015b"+
+    "\11\0\1\u015b\2\0\2\u015b\4\0\1\u015b\1\0\4\u015b"+
+    "\3\0\2\u015b\26\0\1\u0176\67\0\1\u0177\103\0\1\u0178"+
+    "\5\0\1\u0179\60\0\1\u017a\5\0\1\u017b\60\0\1\u017c"+
+    "\5\0\1\u017d\57\0\1\u017e\33\0\1\u017f\103\0\1\u0180"+
+    "\134\0\1\u0181\43\0\1\u0182\45\0\1\u0183\113\0\1\u0184"+
+    "\60\0\1\u0185\47\0\1\u0186\113\0\1\u0187\73\0\1\u0188"+
+    "\52\0\1\u0189\47\0\1\u018a\66\0\1\u018b\120\0\1\u018c"+
+    "\62\0\1\u018d\105\0\1\u018e\66\0\1\u018f\17\0\1\u0190"+
+    "\106\0\1\u0191\5\0\1\u0192\42\0\1\u0193\111\0\1\u0194"+
+    "\62\0\1\u0195\50\0\1\u0196\104\0\1\u0197\50\0\1\u0198"+
+    "\115\0\1\u0199\1\0\1\u019a\64\0\1\u019b\1\0\1\u019c"+
+    "\67\0\1\u019d\52\0\1\u019e\45\0\1\u019f\66\0\1\u01a0"+
+    "\113\0\1\u01a1\110\0\1\u01a2\66\0\1\u01a3\51\0\1\u01a4"+
+    "\56\0\1\u01a5\65\0\1\u01a6\66\0\1\u01a7\100\0\1\u01a8"+
+    "\70\0\1\u01a9\64\0\1\u01aa\70\0\1\u01ab\53\0\1\u01ac"+
+    "\76\0\1\u01ad\66\0\1\u01ae\56\0\1\u01af\44\0\1\u01b0"+
+    "\66\0\1\u01b1\121\0\1\u01b2\23\0\1\u01b3\131\0\1\u01b4"+
+    "\66\0\1\u01b5\56\0\1\u01b6\75\0\1\u01b7\1\0\1\u01b8"+
+    "\64\0\1\u01b9\1\0\1\u01ba\101\0\1\u01bb\7\0\1\u01bc"+
+    "\131\0\1\u01bd\70\0\1\u01be\64\0\1\u01bf\70\0\1\u01c0"+
+    "\31\0\1\u01c1\1\0\1\u01c2\116\0\1\u01c3\1\0\1\u01c4"+
+    "\64\0\1\u01c5\1\0\1\u01c6\65\0\1\u01c7\70\0\1\u01c8"+
+    "\64\0\1\u01c9\70\0\1\u01ca\12\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[18810];
+    int [] result = new int[18975];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -394,27 +396,27 @@ class WasmLexer implements FlexLexer {
     "\1\1\1\0\1\1\10\0\1\11\5\0\1\11\5\0"+
     "\1\1\10\0\1\1\10\0\1\11\5\0\1\1\1\0"+
     "\1\1\3\0\1\1\20\0\2\1\1\0\1\1\2\0"+
-    "\2\1\7\0\1\1\2\11\1\0\2\11\1\1\1\11"+
-    "\1\0\1\11\2\0\3\11\1\0\1\11\1\0\2\11"+
-    "\2\0\2\11\1\0\2\11\2\0\1\1\13\0\1\11"+
-    "\2\0\2\11\3\0\1\11\13\0\1\11\2\0\1\11"+
-    "\16\0\2\11\1\1\3\0\1\11\3\0\1\11\4\0"+
-    "\1\11\1\0\1\11\1\0\2\11\1\1\1\11\1\0"+
-    "\2\11\2\0\2\11\1\1\3\0\1\11\11\0\1\11"+
-    "\3\0\1\11\3\0\2\11\1\0\2\11\1\0\1\11"+
-    "\1\0\1\11\1\0\2\1\3\0\1\11\1\0\1\11"+
-    "\3\0\2\11\5\0\1\11\3\0\1\11\2\0\1\11"+
-    "\4\0\2\11\1\0\1\11\1\1\3\0\3\11\1\0"+
-    "\1\11\7\0\1\11\3\0\3\11\6\0\1\11\3\0"+
-    "\1\11\1\0\1\11\1\0\1\11\1\0\1\11\3\0"+
-    "\1\11\1\0\1\11\6\0\1\1\2\11\3\0\2\11"+
-    "\7\0\2\11\13\0\4\11\4\0\1\11\4\0\1\11"+
-    "\2\0\2\11\13\0\1\11\1\0\1\11\5\0\1\11"+
-    "\10\0\7\11\5\0\1\11\1\0\2\11\6\0\5\11"+
-    "\6\0\4\11";
+    "\2\1\2\0\1\1\4\0\1\1\2\11\1\0\2\11"+
+    "\1\1\1\11\1\0\1\11\2\0\3\11\1\0\1\11"+
+    "\1\0\2\11\2\0\2\11\1\0\2\11\2\0\1\1"+
+    "\13\0\1\11\2\0\2\11\3\0\1\11\13\0\1\11"+
+    "\1\1\1\0\1\11\7\0\1\1\6\0\2\11\1\1"+
+    "\3\0\1\1\3\0\1\11\4\0\1\11\1\0\1\11"+
+    "\1\0\2\11\1\1\1\11\1\0\2\11\2\0\2\11"+
+    "\1\1\3\0\1\11\11\0\1\11\3\0\1\11\3\0"+
+    "\2\11\1\0\2\11\1\0\1\11\1\0\1\11\1\0"+
+    "\2\1\4\0\1\11\1\0\1\11\3\0\2\11\5\0"+
+    "\1\11\3\0\1\11\2\0\1\11\4\0\2\11\1\0"+
+    "\1\11\1\1\3\0\3\11\1\0\1\11\7\0\1\11"+
+    "\4\0\3\11\6\0\1\11\3\0\1\11\1\0\1\11"+
+    "\1\0\1\11\1\0\1\11\3\0\1\11\1\0\1\11"+
+    "\6\0\1\1\3\11\3\0\2\11\7\0\2\11\13\0"+
+    "\4\11\4\0\1\11\4\0\1\11\2\0\2\11\13\0"+
+    "\1\11\1\0\1\11\5\0\1\11\10\0\7\11\5\0"+
+    "\1\11\1\0\2\11\6\0\5\11\6\0\4\11";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[455];
+    int [] result = new int[458];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -734,637 +736,657 @@ class WasmLexer implements FlexLexer {
             { return TokenType.BAD_CHARACTER;
             } 
             // fall through
-          case 128: break;
+          case 132: break;
           case 2: 
             { return WasmTypes.TINT;
             } 
             // fall through
-          case 129: break;
+          case 133: break;
           case 3: 
             { return WasmTypes.TDOT;
             } 
             // fall through
-          case 130: break;
+          case 134: break;
           case 4: 
             { return TokenType.WHITE_SPACE;
             } 
             // fall through
-          case 131: break;
+          case 135: break;
           case 5: 
             { return WasmTypes.TLP;
             } 
             // fall through
-          case 132: break;
+          case 136: break;
           case 6: 
             { return WasmTypes.TRP;
             } 
             // fall through
-          case 133: break;
+          case 137: break;
           case 7: 
             { return WasmTypes.TEQ;
             } 
             // fall through
-          case 134: break;
+          case 138: break;
           case 8: 
             { return WasmTypes.TFLOAT;
             } 
             // fall through
-          case 135: break;
+          case 139: break;
           case 9: 
             { return WasmTypes.TNAME;
             } 
             // fall through
-          case 136: break;
+          case 140: break;
           case 10: 
             { return WasmTypes.TIF;
             } 
             // fall through
-          case 137: break;
+          case 141: break;
           case 11: 
             { return WasmTypes.TNE;
             } 
             // fall through
-          case 138: break;
+          case 142: break;
           case 12: 
             { return WasmTypes.TID;
             } 
             // fall through
-          case 139: break;
+          case 143: break;
           case 13: 
             { return WasmTypes.TOR;
             } 
             // fall through
-          case 140: break;
+          case 144: break;
           case 14: 
             { return WasmTypes.TLT;
             } 
             // fall through
-          case 141: break;
+          case 145: break;
           case 15: 
             { return WasmTypes.TLE;
             } 
             // fall through
-          case 142: break;
+          case 146: break;
           case 16: 
             { return WasmTypes.TBR;
             } 
             // fall through
-          case 143: break;
+          case 147: break;
           case 17: 
             { return WasmTypes.TGT;
             } 
             // fall through
-          case 144: break;
+          case 148: break;
           case 18: 
             { return WasmTypes.TGE;
             } 
             // fall through
-          case 145: break;
-          case 19: 
-            { return WasmTypes.TXOR;
-            } 
-            // fall through
-          case 146: break;
-          case 20: 
-            { return WasmTypes.TI32;
-            } 
-            // fall through
-          case 147: break;
-          case 21: 
-            { return WasmTypes.TI64;
-            } 
-            // fall through
-          case 148: break;
-          case 22: 
-            { return WasmTypes.TNOP;
-            } 
-            // fall through
           case 149: break;
-          case 23: 
-            { return WasmTypes.TNEG;
+          case 19: 
+            { return WasmTypes.TTEE;
             } 
             // fall through
           case 150: break;
-          case 24: 
-            { return WasmTypes.TF32;
+          case 20: 
+            { return WasmTypes.TXOR;
             } 
             // fall through
           case 151: break;
-          case 25: 
-            { return WasmTypes.TF64;
+          case 21: 
+            { return WasmTypes.TI32;
             } 
             // fall through
           case 152: break;
-          case 26: 
-            { return WasmTypes.TAND;
+          case 22: 
+            { return WasmTypes.TI64;
             } 
             // fall through
           case 153: break;
-          case 27: 
-            { return WasmTypes.TADD;
+          case 23: 
+            { return WasmTypes.TNOP;
             } 
             // fall through
           case 154: break;
-          case 28: 
-            { return WasmTypes.TABS;
+          case 24: 
+            { return WasmTypes.TNEG;
             } 
             // fall through
           case 155: break;
-          case 29: 
-            { return WasmTypes.LINE_COMMENT;
+          case 25: 
+            { return WasmTypes.TF32;
             } 
             // fall through
           case 156: break;
-          case 30: 
-            { return WasmTypes.TMIN;
+          case 26: 
+            { return WasmTypes.TF64;
             } 
             // fall through
           case 157: break;
-          case 31: 
-            { return WasmTypes.TMAX;
+          case 27: 
+            { return WasmTypes.TAND;
             } 
             // fall through
           case 158: break;
-          case 32: 
-            { return WasmTypes.TMUT;
+          case 28: 
+            { return WasmTypes.TADD;
             } 
             // fall through
           case 159: break;
-          case 33: 
-            { return WasmTypes.TMUL;
+          case 29: 
+            { return WasmTypes.TABS;
             } 
             // fall through
           case 160: break;
-          case 34: 
-            { return WasmTypes.TDIV;
+          case 30: 
+            { return WasmTypes.LINE_COMMENT;
             } 
             // fall through
           case 161: break;
-          case 35: 
-            { return WasmTypes.TEND;
+          case 31: 
+            { return WasmTypes.TMIN;
             } 
             // fall through
           case 162: break;
-          case 36: 
-            { return WasmTypes.TEQZ;
+          case 32: 
+            { return WasmTypes.TMAX;
             } 
             // fall through
           case 163: break;
-          case 37: 
-            { return WasmTypes.TCTZ;
+          case 33: 
+            { return WasmTypes.TMUT;
             } 
             // fall through
           case 164: break;
-          case 38: 
-            { return WasmTypes.TCLZ;
+          case 34: 
+            { return WasmTypes.TMUL;
             } 
             // fall through
           case 165: break;
-          case 39: 
-            { return WasmTypes.TSUB;
+          case 35: 
+            { return WasmTypes.TDIV;
             } 
             // fall through
           case 166: break;
-          case 40: 
-            { return WasmTypes.TSHL;
+          case 36: 
+            { return WasmTypes.TEND;
             } 
             // fall through
           case 167: break;
-          case 41: 
-            { return WasmTypes.TTYPE;
+          case 37: 
+            { return WasmTypes.TEQZ;
             } 
             // fall through
           case 168: break;
-          case 42: 
-            { return WasmTypes.TTHEN;
+          case 38: 
+            { return WasmTypes.TCTZ;
             } 
             // fall through
           case 169: break;
-          case 43: 
-            { return WasmTypes.TFUNC;
+          case 39: 
+            { return WasmTypes.TCLZ;
             } 
             // fall through
           case 170: break;
-          case 44: 
-            { return WasmTypes.BLOCK_COMMENT;
+          case 40: 
+            { return WasmTypes.TSUB;
             } 
             // fall through
           case 171: break;
-          case 45: 
-            { return WasmTypes.TDATA;
+          case 41: 
+            { return WasmTypes.TSET;
             } 
             // fall through
           case 172: break;
-          case 46: 
-            { return WasmTypes.TDROP;
+          case 42: 
+            { return WasmTypes.TSHL;
             } 
             // fall through
           case 173: break;
-          case 47: 
-            { return WasmTypes.TLT_U;
+          case 43: 
+            { return WasmTypes.TGET;
             } 
             // fall through
           case 174: break;
-          case 48: 
-            { return WasmTypes.TLT_S;
+          case 44: 
+            { return WasmTypes.TTYPE;
             } 
             // fall through
           case 175: break;
-          case 49: 
-            { return WasmTypes.TLOAD;
+          case 45: 
+            { return WasmTypes.TTHEN;
             } 
             // fall through
           case 176: break;
-          case 50: 
-            { return WasmTypes.TLOOP;
+          case 46: 
+            { return WasmTypes.TFUNC;
             } 
             // fall through
           case 177: break;
-          case 51: 
-            { return WasmTypes.TLE_U;
+          case 47: 
+            { return WasmTypes.BLOCK_COMMENT;
             } 
             // fall through
           case 178: break;
-          case 52: 
-            { return WasmTypes.TLE_S;
+          case 48: 
+            { return WasmTypes.TDATA;
             } 
             // fall through
           case 179: break;
-          case 53: 
-            { return WasmTypes.TELEM;
+          case 49: 
+            { return WasmTypes.TDROP;
             } 
             // fall through
           case 180: break;
-          case 54: 
-            { return WasmTypes.TELSE;
+          case 50: 
+            { return WasmTypes.TLT_U;
             } 
             // fall through
           case 181: break;
-          case 55: 
-            { return WasmTypes.TCALL;
+          case 51: 
+            { return WasmTypes.TLT_S;
             } 
             // fall through
           case 182: break;
-          case 56: 
-            { return WasmTypes.TCEIL;
+          case 52: 
+            { return WasmTypes.TLOAD;
             } 
             // fall through
           case 183: break;
-          case 57: 
-            { return WasmTypes.TSIZE;
+          case 53: 
+            { return WasmTypes.TLOOP;
             } 
             // fall through
           case 184: break;
-          case 58: 
-            { return WasmTypes.TSQRT;
+          case 54: 
+            { return WasmTypes.TLE_U;
             } 
             // fall through
           case 185: break;
-          case 59: 
-            { return WasmTypes.TGT_U;
+          case 55: 
+            { return WasmTypes.TLE_S;
             } 
             // fall through
           case 186: break;
-          case 60: 
-            { return WasmTypes.TGT_S;
+          case 56: 
+            { return WasmTypes.TELEM;
             } 
             // fall through
           case 187: break;
-          case 61: 
-            { return WasmTypes.TGE_U;
+          case 57: 
+            { return WasmTypes.TELSE;
             } 
             // fall through
           case 188: break;
-          case 62: 
-            { return WasmTypes.TGE_S;
+          case 58: 
+            { return WasmTypes.TCALL;
             } 
             // fall through
           case 189: break;
-          case 63: 
-            { return WasmTypes.TGROW;
+          case 59: 
+            { return WasmTypes.TCEIL;
             } 
             // fall through
           case 190: break;
-          case 64: 
-            { return WasmTypes.TTABLE;
+          case 60: 
+            { return WasmTypes.TSIZE;
             } 
             // fall through
           case 191: break;
-          case 65: 
-            { return WasmTypes.TTRUNC;
+          case 61: 
+            { return WasmTypes.TSQRT;
             } 
             // fall through
           case 192: break;
-          case 66: 
-            { return WasmTypes.TFLOOR;
+          case 62: 
+            { return WasmTypes.TGT_U;
             } 
             // fall through
           case 193: break;
-          case 67: 
-            { return WasmTypes.TALIGN;
+          case 63: 
+            { return WasmTypes.TGT_S;
             } 
             // fall through
           case 194: break;
-          case 68: 
-            { return WasmTypes.TDIV_U;
+          case 64: 
+            { return WasmTypes.TGE_U;
             } 
             // fall through
           case 195: break;
-          case 69: 
-            { return WasmTypes.TDIV_S;
+          case 65: 
+            { return WasmTypes.TGE_S;
             } 
             // fall through
           case 196: break;
-          case 70: 
-            { return WasmTypes.TLOCAL;
+          case 66: 
+            { return WasmTypes.TGROW;
             } 
             // fall through
           case 197: break;
-          case 71: 
-            { return WasmTypes.TCONST;
+          case 67: 
+            { return WasmTypes.TTABLE;
             } 
             // fall through
           case 198: break;
-          case 72: 
-            { return WasmTypes.TPARAM;
+          case 68: 
+            { return WasmTypes.TTRUNC;
             } 
             // fall through
           case 199: break;
-          case 73: 
-            { return WasmTypes.TREM_U;
+          case 69: 
+            { return WasmTypes.TFLOOR;
             } 
             // fall through
           case 200: break;
-          case 74: 
-            { return WasmTypes.TREM_S;
+          case 70: 
+            { return WasmTypes.TALIGN;
             } 
             // fall through
           case 201: break;
-          case 75: 
-            { return WasmTypes.TSTART;
+          case 71: 
+            { return WasmTypes.TDIV_U;
             } 
             // fall through
           case 202: break;
-          case 76: 
-            { return WasmTypes.TSTORE;
+          case 72: 
+            { return WasmTypes.TDIV_S;
             } 
             // fall through
           case 203: break;
-          case 77: 
-            { return WasmTypes.TSHR_U;
+          case 73: 
+            { return WasmTypes.TLOCAL;
             } 
             // fall through
           case 204: break;
-          case 78: 
-            { return WasmTypes.TSHR_S;
+          case 74: 
+            { return WasmTypes.TCONST;
             } 
             // fall through
           case 205: break;
-          case 79: 
-            { return WasmTypes.TBLOCK;
+          case 75: 
+            { return WasmTypes.TPARAM;
             } 
             // fall through
           case 206: break;
-          case 80: 
-            { return WasmTypes.TBR_IF;
+          case 76: 
+            { return WasmTypes.TREM_U;
             } 
             // fall through
           case 207: break;
-          case 81: 
-            { return WasmTypes.TIMPORT;
+          case 77: 
+            { return WasmTypes.TREM_S;
             } 
             // fall through
           case 208: break;
-          case 82: 
-            { return WasmTypes.TMODULE;
+          case 78: 
+            { return WasmTypes.TSTART;
             } 
             // fall through
           case 209: break;
-          case 83: 
-            { return WasmTypes.TMEMORY;
+          case 79: 
+            { return WasmTypes.TSTORE;
             } 
             // fall through
           case 210: break;
-          case 84: 
-            { return WasmTypes.TOFFSET;
+          case 80: 
+            { return WasmTypes.TSHR_U;
             } 
             // fall through
           case 211: break;
-          case 85: 
-            { return WasmTypes.TEXPORT;
+          case 81: 
+            { return WasmTypes.TSHR_S;
             } 
             // fall through
           case 212: break;
-          case 86: 
-            { return WasmTypes.TPOPCNT;
+          case 82: 
+            { return WasmTypes.TBLOCK;
             } 
             // fall through
           case 213: break;
-          case 87: 
-            { return WasmTypes.TRETURN;
+          case 83: 
+            { return WasmTypes.TBR_IF;
             } 
             // fall through
           case 214: break;
-          case 88: 
-            { return WasmTypes.TRESULT;
+          case 84: 
+            { return WasmTypes.TIMPORT;
             } 
             // fall through
           case 215: break;
-          case 89: 
-            { return WasmTypes.TSTORE8;
+          case 85: 
+            { return WasmTypes.TMODULE;
             } 
             // fall through
           case 216: break;
-          case 90: 
-            { return WasmTypes.TSELECT;
+          case 86: 
+            { return WasmTypes.TMEMORY;
             } 
             // fall through
           case 217: break;
-          case 91: 
-            { return WasmTypes.TGLOBAL;
+          case 87: 
+            { return WasmTypes.TOFFSET;
             } 
             // fall through
           case 218: break;
-          case 92: 
-            { return WasmTypes.TNEAREST;
+          case 88: 
+            { return WasmTypes.TEXPORT;
             } 
             // fall through
           case 219: break;
-          case 93: 
-            { return WasmTypes.TANYFUNC;
+          case 89: 
+            { return WasmTypes.TPOPCNT;
             } 
             // fall through
           case 220: break;
-          case 94: 
-            { return WasmTypes.TLOAD8_U;
+          case 90: 
+            { return WasmTypes.TRETURN;
             } 
             // fall through
           case 221: break;
-          case 95: 
-            { return WasmTypes.TLOAD8_S;
+          case 91: 
+            { return WasmTypes.TRESULT;
             } 
             // fall through
           case 222: break;
-          case 96: 
-            { return WasmTypes.TSTORE32;
+          case 92: 
+            { return WasmTypes.TSTORE8;
             } 
             // fall through
           case 223: break;
-          case 97: 
-            { return WasmTypes.TSTORE16;
+          case 93: 
+            { return WasmTypes.TSELECT;
             } 
             // fall through
           case 224: break;
-          case 98: 
-            { return WasmTypes.TLOAD32_U;
+          case 94: 
+            { return WasmTypes.TGLOBAL;
             } 
             // fall through
           case 225: break;
-          case 99: 
-            { return WasmTypes.TLOAD32_S;
+          case 95: 
+            { return WasmTypes.TNEAREST;
             } 
             // fall through
           case 226: break;
-          case 100: 
-            { return WasmTypes.TLOAD16_U;
+          case 96: 
+            { return WasmTypes.TFUNCREF;
             } 
             // fall through
           case 227: break;
-          case 101: 
-            { return WasmTypes.TLOAD16_S;
+          case 97: 
+            { return WasmTypes.TANYFUNC;
             } 
             // fall through
           case 228: break;
-          case 102: 
-            { return WasmTypes.TCOPYSIGN;
+          case 98: 
+            { return WasmTypes.TLOAD8_U;
             } 
             // fall through
           case 229: break;
-          case 103: 
-            { return WasmTypes.TBR_TABLE;
+          case 99: 
+            { return WasmTypes.TLOAD8_S;
             } 
             // fall through
           case 230: break;
-          case 104: 
-            { return WasmTypes.TWRAP_I64;
+          case 100: 
+            { return WasmTypes.TSTORE32;
             } 
             // fall through
           case 231: break;
-          case 105: 
-            { return WasmTypes.TTEE_GLOBAL;
+          case 101: 
+            { return WasmTypes.TSTORE16;
             } 
             // fall through
           case 232: break;
-          case 106: 
-            { return WasmTypes.TSET_LOCAL;
+          case 102: 
+            { return WasmTypes.TLOAD32_U;
             } 
             // fall through
           case 233: break;
-          case 107: 
-            { return WasmTypes.TGET_LOCAL;
+          case 103: 
+            { return WasmTypes.TLOAD32_S;
             } 
             // fall through
           case 234: break;
-          case 108: 
-            { return WasmTypes.TDEMOTE_F64;
+          case 104: 
+            { return WasmTypes.TLOAD16_U;
             } 
             // fall through
           case 235: break;
-          case 109: 
-            { return WasmTypes.TSET_GLOBAL;
+          case 105: 
+            { return WasmTypes.TLOAD16_S;
             } 
             // fall through
           case 236: break;
-          case 110: 
-            { return WasmTypes.TGET_GLOBAL;
+          case 106: 
+            { return WasmTypes.TCOPYSIGN;
             } 
             // fall through
           case 237: break;
-          case 111: 
-            { return WasmTypes.TTRUNC_U_F32;
+          case 107: 
+            { return WasmTypes.TBR_TABLE;
             } 
             // fall through
           case 238: break;
-          case 112: 
-            { return WasmTypes.TTRUNC_U_F64;
+          case 108: 
+            { return WasmTypes.TWRAP_I64;
             } 
             // fall through
           case 239: break;
-          case 113: 
-            { return WasmTypes.TTRUNC_S_F32;
+          case 109: 
+            { return WasmTypes.TTEE_LOCAL;
             } 
             // fall through
           case 240: break;
-          case 114: 
-            { return WasmTypes.TTRUNC_S_F64;
+          case 110: 
+            { return WasmTypes.TSET_LOCAL;
             } 
             // fall through
           case 241: break;
-          case 115: 
-            { return WasmTypes.TUNREACHABLE;
+          case 111: 
+            { return WasmTypes.TGET_LOCAL;
             } 
             // fall through
           case 242: break;
-          case 116: 
-            { return WasmTypes.TPROMOTE_F32;
+          case 112: 
+            { return WasmTypes.TDEMOTE_F64;
             } 
             // fall through
           case 243: break;
-          case 117: 
-            { return WasmTypes.TEXTEND_U_I32;
+          case 113: 
+            { return WasmTypes.TSET_GLOBAL;
             } 
             // fall through
           case 244: break;
-          case 118: 
-            { return WasmTypes.TEXTEND_S_I32;
+          case 114: 
+            { return WasmTypes.TGET_GLOBAL;
             } 
             // fall through
           case 245: break;
-          case 119: 
-            { return WasmTypes.TCALL_INDIRECT;
+          case 115: 
+            { return WasmTypes.TTRUNC_U_F32;
             } 
             // fall through
           case 246: break;
-          case 120: 
-            { return WasmTypes.TCONVERT_U_I32;
+          case 116: 
+            { return WasmTypes.TTRUNC_U_F64;
             } 
             // fall through
           case 247: break;
-          case 121: 
-            { return WasmTypes.TCONVERT_U_I64;
+          case 117: 
+            { return WasmTypes.TTRUNC_S_F32;
             } 
             // fall through
           case 248: break;
-          case 122: 
-            { return WasmTypes.TCONVERT_S_I32;
+          case 118: 
+            { return WasmTypes.TTRUNC_S_F64;
             } 
             // fall through
           case 249: break;
-          case 123: 
-            { return WasmTypes.TCONVERT_S_I64;
+          case 119: 
+            { return WasmTypes.TUNREACHABLE;
             } 
             // fall through
           case 250: break;
-          case 124: 
-            { return WasmTypes.TREINTERPRET_I32;
+          case 120: 
+            { return WasmTypes.TPROMOTE_F32;
             } 
             // fall through
           case 251: break;
-          case 125: 
-            { return WasmTypes.TREINTERPRET_I64;
+          case 121: 
+            { return WasmTypes.TEXTEND_U_I32;
             } 
             // fall through
           case 252: break;
-          case 126: 
-            { return WasmTypes.TREINTERPRET_F32;
+          case 122: 
+            { return WasmTypes.TEXTEND_S_I32;
             } 
             // fall through
           case 253: break;
-          case 127: 
-            { return WasmTypes.TREINTERPRET_F64;
+          case 123: 
+            { return WasmTypes.TCALL_INDIRECT;
             } 
             // fall through
           case 254: break;
+          case 124: 
+            { return WasmTypes.TCONVERT_U_I32;
+            } 
+            // fall through
+          case 255: break;
+          case 125: 
+            { return WasmTypes.TCONVERT_U_I64;
+            } 
+            // fall through
+          case 256: break;
+          case 126: 
+            { return WasmTypes.TCONVERT_S_I32;
+            } 
+            // fall through
+          case 257: break;
+          case 127: 
+            { return WasmTypes.TCONVERT_S_I64;
+            } 
+            // fall through
+          case 258: break;
+          case 128: 
+            { return WasmTypes.TREINTERPRET_I32;
+            } 
+            // fall through
+          case 259: break;
+          case 129: 
+            { return WasmTypes.TREINTERPRET_I64;
+            } 
+            // fall through
+          case 260: break;
+          case 130: 
+            { return WasmTypes.TREINTERPRET_F32;
+            } 
+            // fall through
+          case 261: break;
+          case 131: 
+            { return WasmTypes.TREINTERPRET_F64;
+            } 
+            // fall through
+          case 262: break;
           default:
             zzScanError(ZZ_NO_MATCH);
           }

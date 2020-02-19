@@ -76,7 +76,7 @@ public class WasmSyntaxHighlighter extends SyntaxHighlighterBase{
     private static boolean isKeyword(IElementType tokenType){
         IElementType[] keywords = {TMEMORY, TTABLE, TANYFUNC, TDATA,
                 TELEM, TEXPORT, TIMPORT, TMODULE,TLOCAL,TGET_GLOBAL,
-                TGET_LOCAL,TSET_GLOBAL,TSET_LOCAL,TTEE_GLOBAL,
+                TGET_LOCAL,TSET_GLOBAL,TSET_LOCAL,TTEE_LOCAL,
                 TTYPE, TFUNC, TPARAM, TRESULT, TMUT, TGLOBAL,TSTART,
                 TBLOCK, TLOOP, TIF, TUNREACHABLE, TNOP, TBR, TBR_IF,
                 TBR_TABLE, TRETURN, TCALL, TCALL_INDIRECT, TDROP,
