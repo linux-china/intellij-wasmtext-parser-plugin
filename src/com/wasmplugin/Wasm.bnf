@@ -82,7 +82,7 @@ num::= tFLOAT | tINT
 
 limits::=  tINT tINT | tINT
 
-elem_type::= tANYFUNC
+elem_type::= tANYFUNC | tFUNCREF
 
 memory_type::= limits
 
@@ -175,7 +175,12 @@ private plain_instruction::=    tUNREACHABLE
                     |   tSET_LOCAL idx
                     |   tGET_GLOBAL idx
                     |   tSET_GLOBAL idx
-                    |   tTEE_GLOBAL idx
+                    |   tTEE_LOCAL idx
+                    |   TLOCAL tDOT TGET idx
+                    |   TLOCAL tDOT TSET idx
+                    |   TLOCAL tDOT TTEE idx
+                    |   TGLOBAL tDOT TGET idx
+                    |   TGLOBAL tDOT TSET idx
                     // Memory Instructions
                     |   tI32 tDOT tLOAD mem_arg
                     |   tI64 tDOT tLOAD mem_arg
