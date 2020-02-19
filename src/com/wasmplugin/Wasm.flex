@@ -75,6 +75,7 @@ FORMAT=[\t\r\n]
 <YYINITIAL> "i64"                              {return WasmTypes.TI64;}
 <YYINITIAL> "f32"                              {return WasmTypes.TF32;}
 <YYINITIAL> "anyfunc"                           {return WasmTypes.TANYFUNC;}
+<YYINITIAL> "funcref"                           {return WasmTypes.TFUNCREF;}
 <YYINITIAL> "mut"                           {return WasmTypes.TMUT;}
 <YYINITIAL> "="                           {return WasmTypes.TEQ;}
 <YYINITIAL> "block"                           {return WasmTypes.TBLOCK;}
@@ -97,7 +98,10 @@ FORMAT=[\t\r\n]
 <YYINITIAL> "set_local"                           {return WasmTypes.TSET_LOCAL;}
 <YYINITIAL> "get_global"                           {return WasmTypes.TGET_GLOBAL;}
 <YYINITIAL> "set_global"                           {return WasmTypes.TSET_GLOBAL;}
-<YYINITIAL> "tee_local"                           {return WasmTypes.TTEE_GLOBAL;}
+<YYINITIAL> "tee_local"                           {return WasmTypes.TTEE_LOCAL;}
+<YYINITIAL> "set"                           {return WasmTypes.TSET;}
+<YYINITIAL> "get"                           {return WasmTypes.TGET;}
+<YYINITIAL> "tee"                           {return WasmTypes.TTEE;}
 <YYINITIAL> "load"                           {return WasmTypes.TLOAD;}
 <YYINITIAL> "load8_s"                           {return WasmTypes.TLOAD8_S;}
 <YYINITIAL> "load8_u"                           {return WasmTypes.TLOAD8_U;}
