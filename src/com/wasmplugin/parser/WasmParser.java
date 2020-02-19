@@ -323,7 +323,7 @@ public class WasmParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // tLP tELEM idx? offset_abbrv idx*  tRP
+  // tLP tELEM idx? offset_abbrv tFUNC* idx*  tRP
   public static boolean element(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "element")) return false;
     if (!nextTokenIs(b, TLP)) return false;
@@ -333,6 +333,7 @@ public class WasmParser implements PsiParser, LightPsiParser {
     r = r && element_2(b, l + 1);
     r = r && offset_abbrv(b, l + 1);
     r = r && element_4(b, l + 1);
+    r = r && element_5(b, l + 1);
     r = r && consumeToken(b, TRP);
     exit_section_(b, m, ELEMENT, r);
     return r;
@@ -345,13 +346,24 @@ public class WasmParser implements PsiParser, LightPsiParser {
     return true;
   }
 
-  // idx*
+  // tFUNC*
   private static boolean element_4(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "element_4")) return false;
     while (true) {
       int c = current_position_(b);
-      if (!idx(b, l + 1)) break;
+      if (!consumeToken(b, TFUNC)) break;
       if (!empty_element_parsed_guard_(b, "element_4", c)) break;
+    }
+    return true;
+  }
+
+  // idx*
+  private static boolean element_5(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "element_5")) return false;
+    while (true) {
+      int c = current_position_(b);
+      if (!idx(b, l + 1)) break;
+      if (!empty_element_parsed_guard_(b, "element_5", c)) break;
     }
     return true;
   }
