@@ -6,6 +6,13 @@
             <option name="Wasm" value="true"/>
         </context>
     </template>
+    <template name="expm" value="(memory (export &quot;memory&quot;) 1)"
+              description="Export memory" toReformat="false"
+              toShortenFQNames="false">
+        <context>
+            <option name="Wasm" value="true"/>
+        </context>
+    </template>
     <template name="imp"
               value="(import &quot;module&quot; &quot;external_name&quot; (func $internal_name (param f64)(result f64)))"
               description="New Import function." toReformat="false"
@@ -14,7 +21,24 @@
             <option name="Wasm" value="true"/>
         </context>
     </template>
-    <template name="func" value="(func $funame (param $i i32)(result i32) &#10; $END$ &#10; )" description="New function."
+    <template name="impm"
+              value="(import &quot;js&quot; &quot;mem&quot; (memory 1))              "
+              description="Import memory" toReformat="false"
+              toShortenFQNames="false">
+        <context>
+            <option name="Wasm" value="true"/>
+        </context>
+    </template>
+    <template name="func" value="(func $funname (param $param1 i32)(result i32) &#10; $END$ &#10; )"
+              description="New function."
+              toReformat="false"
+              toShortenFQNames="false">
+        <context>
+            <option name="Wasm" value="true"/>
+        </context>
+    </template>
+    <template name="data" value="(data (i32.const 0) &quot;Hi&quot;)"
+              description="New data"
               toReformat="false"
               toShortenFQNames="false">
         <context>
